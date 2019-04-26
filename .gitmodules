@@ -592,9 +592,6 @@
 [submodule "prettyprinter"]
     path = pkgs/prettyprinter
     url = git@github.com:haskell-vanguard/prettyprinter
-[submodule "prettyprinter-ansi-terminal"]
-    path = pkgs/prettyprinter-ansi-terminal
-    url = git@github.com:haskell-vanguard/prettyprinter-ansi-terminal
 [submodule "pretty-show"]
     path = pkgs/pretty-show
     url = git@github.com:haskell-vanguard/pretty-show

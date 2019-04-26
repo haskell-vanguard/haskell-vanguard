@@ -6,6 +6,8 @@ packages: ./
   pkgs/x509/*/
   pkgs/microlens/*/
   pkgs/ghc-dump-core/*/
+  pkgs/prettyprinter/*/*
+  pkgs/basement/basement/
   pkgs/uuid-types/uuid-types/
 
 benchmarks: False
