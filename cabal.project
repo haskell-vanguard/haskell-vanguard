@@ -1,0 +1,12 @@
+packages: ./
+  pkgs/*/
+  pkgs/unliftio/*/
+  pkgs/http-client/*/
+  pkgs/wai/*/
+  pkgs/x509/*/
+  pkgs/microlens/*/
+  pkgs/ghc-dump-core/*/
+  pkgs/uuid-types/uuid-types/
+
+benchmarks: False
+tests: False
