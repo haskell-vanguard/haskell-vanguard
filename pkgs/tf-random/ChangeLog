@@ -1,0 +1,15 @@
+0.5
+	* Allow older versions of random.
+
+0.4
+	* Avoid exporting new RandomGen methods from System.Random.TF .
+
+0.3
+	* Added newTFGen and mkTFGen.
+	* Small additions to Intances.
+
+0.2
+	* Compatibility with older base up to 4.2
+
+0.1
+	* Initial release

@@ -1,0 +1,16 @@
+Name:           IfElse
+Version:        0.85
+Cabal-Version:  >= 1.2
+License:        BSD3
+License-File:   LICENSE
+Author:         J.R. Heard and Wren Thornton
+Maintainer:     J.R. Heard
+Category:       Control
+Description:    Anaphoric and miscellaneous useful control-flow
+Synopsis:       Anaphoric and miscellaneous useful control-flow
+Build-Type:     Simple
+
+Library
+   Build-Depends: base, mtl
+   Exposed-Modules: 
+       Control.Monad.IfElse

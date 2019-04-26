@@ -1,0 +1,825 @@
+[submodule "active"]
+    path = pkgs/active
+    url = git@github.com:haskell-vanguard/active
+[submodule "adjunctions"]
+    path = pkgs/adjunctions
+    url = git@github.com:haskell-vanguard/adjunctions
+[submodule "aeson"]
+    path = pkgs/aeson
+    url = git@github.com:haskell-vanguard/aeson
+[submodule "ansi-terminal"]
+    path = pkgs/ansi-terminal
+    url = git@github.com:haskell-vanguard/ansi-terminal
+[submodule "ansi-wl-pprint"]
+    path = pkgs/ansi-wl-pprint
+    url = git@github.com:haskell-vanguard/ansi-wl-pprint
+[submodule "appar"]
+    path = pkgs/appar
+    url = git@github.com:haskell-vanguard/appar
+[submodule "asn1-encoding"]
+    path = pkgs/asn1-encoding
+    url = git@github.com:haskell-vanguard/asn1-encoding
+[submodule "asn1-parse"]
+    path = pkgs/asn1-parse
+    url = git@github.com:haskell-vanguard/asn1-parse
+[submodule "assert"]
+    path = pkgs/assert
+    url = git@github.com:haskell-vanguard/assert
+[submodule "async"]
+    path = pkgs/async
+    url = git@github.com:haskell-vanguard/async
+[submodule "attoparsec"]
+    path = pkgs/attoparsec
+    url = git@github.com:haskell-vanguard/attoparsec
+[submodule "base64-bytestring"]
+    path = pkgs/base64-bytestring
+    url = git@github.com:haskell-vanguard/base64-bytestring
+[submodule "base-compat"]
+    path = pkgs/base-compat
+    url = git@github.com:haskell-vanguard/base-compat
+[submodule "base-compat-batteries"]
+    path = pkgs/base-compat-batteries
+    url = git@github.com:haskell-vanguard/base-compat-batteries
+[submodule "basement"]
+    path = pkgs/basement
+    url = git@github.com:haskell-vanguard/basement
+[submodule "base-orphans"]
+    path = pkgs/base-orphans
+    url = git@github.com:haskell-vanguard/base-orphans
+[submodule "base-prelude"]
+    path = pkgs/base-prelude
+    url = git@github.com:haskell-vanguard/base-prelude
+[submodule "beamable"]
+    path = pkgs/beamable
+    url = git@github.com:haskell-vanguard/beamable
+[submodule "bifunctors"]
+    path = pkgs/bifunctors
+    url = git@github.com:haskell-vanguard/bifunctors
+[submodule "blaze-builder"]
+    path = pkgs/blaze-builder
+    url = git@github.com:haskell-vanguard/blaze-builder
+[submodule "blaze-html"]
+    path = pkgs/blaze-html
+    url = git@github.com:haskell-vanguard/blaze-html
+[submodule "blaze-markup"]
+    path = pkgs/blaze-markup
+    url = git@github.com:haskell-vanguard/blaze-markup
+[submodule "Boolean"]
+    path = pkgs/Boolean
+    url = git@github.com:haskell-vanguard/Boolean
+[submodule "BoundedChan"]
+    path = pkgs/BoundedChan
+    url = git@github.com:haskell-vanguard/BoundedChan
+[submodule "bsb-http-chunked"]
+    path = pkgs/bsb-http-chunked
+    url = git@github.com:haskell-vanguard/bsb-http-chunked
+[submodule "byteable"]
+    path = pkgs/byteable
+    url = git@github.com:haskell-vanguard/byteable
+[submodule "byteorder"]
+    path = pkgs/byteorder
+    url = git@github.com:haskell-vanguard/byteorder
+[submodule "bytes"]
+    path = pkgs/bytes
+    url = git@github.com:haskell-vanguard/bytes
+[submodule "c10k"]
+    path = pkgs/c10k
+    url = git@github.com:haskell-vanguard/c10k
+[submodule "cabal-doctest"]
+    path = pkgs/cabal-doctest
+    url = git@github.com:haskell-vanguard/cabal-doctest
+[submodule "cairo"]
+    path = pkgs/cairo
+    url = git@github.com:haskell-vanguard/cairo
+[submodule "call-stack"]
+    path = pkgs/call-stack
+    url = git@github.com:haskell-vanguard/call-stack
+[submodule "case-insensitive"]
+    path = pkgs/case-insensitive
+    url = git@github.com:haskell-vanguard/case-insensitive
+[submodule "cassava"]
+    path = pkgs/cassava
+    url = git@github.com:haskell-vanguard/cassava
+[submodule "cborg"]
+    path = pkgs/cborg
+    url = git@github.com:haskell-vanguard/cborg
+[submodule "cereal"]
+    path = pkgs/cereal
+    url = git@github.com:haskell-vanguard/cereal
+[submodule "Chart"]
+    path = pkgs/Chart
+    url = git@github.com:haskell-vanguard/Chart
+[submodule "clock"]
+    path = pkgs/clock
+    url = git@github.com:haskell-vanguard/clock
+[submodule "cmdargs"]
+    path = pkgs/cmdargs
+    url = git@github.com:haskell-vanguard/cmdargs
+[submodule "code-page"]
+    path = pkgs/code-page
+    url = git@github.com:haskell-vanguard/code-page
+[submodule "colour"]
+    path = pkgs/colour
+    url = git@github.com:haskell-vanguard/colour
+[submodule "comonad"]
+    path = pkgs/comonad
+    url = git@github.com:haskell-vanguard/comonad
+[submodule "compact"]
+    path = pkgs/compact
+    url = git@github.com:haskell-vanguard/compact
+[submodule "conduit"]
+    path = pkgs/conduit
+    url = git@github.com:haskell-vanguard/conduit
+[submodule "connection"]
+    path = pkgs/connection
+    url = git@github.com:haskell-vanguard/connection
+[submodule "constraints"]
+    path = pkgs/constraints
+    url = git@github.com:haskell-vanguard/constraints
+[submodule "contravariant"]
+    path = pkgs/contravariant
+    url = git@github.com:haskell-vanguard/contravariant
+[submodule "cookie"]
+    path = pkgs/cookie
+    url = git@github.com:haskell-vanguard/cookie
+[submodule "cpu"]
+    path = pkgs/cpu
+    url = git@github.com:haskell-vanguard/cpu
+[submodule "criterion"]
+    path = pkgs/criterion
+    url = git@github.com:haskell-vanguard/criterion
+[submodule "criterion-measurement"]
+    path = pkgs/criterion-measurement
+    url = git@github.com:haskell-vanguard/criterion-measurement
+[submodule "cryptonite"]
+    path = pkgs/cryptonite
+    url = git@github.com:haskell-vanguard/cryptonite
+[submodule "data-default"]
+    path = pkgs/data-default
+    url = git@github.com:haskell-vanguard/data-default
+[submodule "dense-linear-algebra"]
+    path = pkgs/dense-linear-algebra
+    url = git@github.com:haskell-vanguard/dense-linear-algebra
+[submodule "diagrams-cairo"]
+    path = pkgs/diagrams-cairo
+    url = git@github.com:haskell-vanguard/diagrams-cairo
+[submodule "diagrams-core"]
+    path = pkgs/diagrams-core
+    url = git@github.com:haskell-vanguard/diagrams-core
+[submodule "diagrams-lib"]
+    path = pkgs/diagrams-lib
+    url = git@github.com:haskell-vanguard/diagrams-lib
+[submodule "diagrams-postscript"]
+    path = pkgs/diagrams-postscript
+    url = git@github.com:haskell-vanguard/diagrams-postscript
+[submodule "diagrams-solve"]
+    path = pkgs/diagrams-solve
+    url = git@github.com:haskell-vanguard/diagrams-solve
+[submodule "diagrams-svg"]
+    path = pkgs/diagrams-svg
+    url = git@github.com:haskell-vanguard/diagrams-svg
+[submodule "distributive"]
+    path = pkgs/distributive
+    url = git@github.com:haskell-vanguard/distributive
+[submodule "dlist"]
+    path = pkgs/dlist
+    url = git@github.com:haskell-vanguard/dlist
+[submodule "doctest"]
+    path = pkgs/doctest
+    url = git@github.com:haskell-vanguard/doctest
+[submodule "double-conversion"]
+    path = pkgs/double-conversion
+    url = git@github.com:haskell-vanguard/double-conversion
+[submodule "dual-tree"]
+    path = pkgs/dual-tree
+    url = git@github.com:haskell-vanguard/dual-tree
+[submodule "either"]
+    path = pkgs/either
+    url = git@github.com:haskell-vanguard/either
+[submodule "elerea"]
+    path = pkgs/elerea
+    url = git@github.com:haskell-vanguard/elerea
+[submodule "entropy"]
+    path = pkgs/entropy
+    url = git@github.com:haskell-vanguard/entropy
+[submodule "enummapset-th"]
+    path = pkgs/enummapset-th
+    url = git@github.com:haskell-vanguard/enummapset-th
+[submodule "erf"]
+    path = pkgs/erf
+    url = git@github.com:haskell-vanguard/erf
+[submodule "exceptions"]
+    path = pkgs/exceptions
+    url = git@github.com:haskell-vanguard/exceptions
+[submodule "extensible"]
+    path = pkgs/extensible
+    url = git@github.com:haskell-vanguard/extensible
+[submodule "extensible-exceptions"]
+    path = pkgs/extensible-exceptions
+    url = git@github.com:haskell-vanguard/extensible-exceptions
+[submodule "extra"]
+    path = pkgs/extra
+    url = git@github.com:haskell-vanguard/extra
+[submodule "fast-builder"]
+    path = pkgs/fast-builder
+    url = git@github.com:haskell-vanguard/fast-builder
+[submodule "filepattern"]
+    path = pkgs/filepattern
+    url = git@github.com:haskell-vanguard/filepattern
+[submodule "fixed"]
+    path = pkgs/fixed
+    url = git@github.com:haskell-vanguard/fixed
+[submodule "flock"]
+    path = pkgs/flock
+    url = git@github.com:haskell-vanguard/flock
+[submodule "fmlist"]
+    path = pkgs/fmlist
+    url = git@github.com:haskell-vanguard/fmlist
+[submodule "foldl"]
+    path = pkgs/foldl
+    url = git@github.com:haskell-vanguard/foldl
+[submodule "foreign-var"]
+    path = pkgs/foreign-var
+    url = git@github.com:haskell-vanguard/foreign-var
+[submodule "free"]
+    path = pkgs/free
+    url = git@github.com:haskell-vanguard/free
+[submodule "freetype2"]
+    path = pkgs/freetype2
+    url = git@github.com:haskell-vanguard/freetype2
+[submodule "gauge"]
+    path = pkgs/gauge
+    url = git@github.com:haskell-vanguard/gauge
+[submodule "generic-deriving"]
+    path = pkgs/generic-deriving
+    url = git@github.com:haskell-vanguard/generic-deriving
+[submodule "ghc-dump-core"]
+    path = pkgs/ghc-dump-core
+    url = git@github.com:haskell-vanguard/ghc-dump-core
+[submodule "ghc-paths"]
+    path = pkgs/ghc-paths
+    url = git@github.com:haskell-vanguard/ghc-paths
+[submodule "gio"]
+    path = pkgs/gio
+    url = git@github.com:haskell-vanguard/gio
+[submodule "glib"]
+    path = pkgs/glib
+    url = git@github.com:haskell-vanguard/glib
+[submodule "Glob"]
+    path = pkgs/Glob
+    url = git@github.com:haskell-vanguard/Glob
+[submodule "GLURaw"]
+    path = pkgs/GLURaw
+    url = git@github.com:haskell-vanguard/GLURaw
+[submodule "GLUtil"]
+    path = pkgs/GLUtil
+    url = git@github.com:haskell-vanguard/GLUtil
+[submodule "gtk"]
+    path = pkgs/gtk
+    url = git@github.com:haskell-vanguard/gtk
+[submodule "gtk2hs-buildtools"]
+    path = pkgs/gtk2hs-buildtools
+    url = git@github.com:haskell-vanguard/gtk2hs-buildtools
+[submodule "gtkglext"]
+    path = pkgs/gtkglext
+    url = git@github.com:haskell-vanguard/gtkglext
+[submodule "half"]
+    path = pkgs/half
+    url = git@github.com:haskell-vanguard/half
+[submodule "hashable"]
+    path = pkgs/hashable
+    url = git@github.com:haskell-vanguard/hashable
+[submodule "hashtables"]
+    path = pkgs/hashtables
+    url = git@github.com:haskell-vanguard/hashtables
+[submodule "haskakafka"]
+    path = pkgs/haskakafka
+    url = git@github.com:haskell-vanguard/haskakafka
+[submodule "haskell-lexer"]
+    path = pkgs/haskell-lexer
+    url = git@github.com:haskell-vanguard/haskell-lexer
+[submodule "haskell-lockfree"]
+    path = pkgs/haskell-lockfree
+    url = git@github.com:haskell-vanguard/haskell-lockfree
+[submodule "haskell-time-locale-compat"]
+    path = pkgs/haskell-time-locale-compat
+    url = git@github.com:haskell-vanguard/haskell-time-locale-compat
+[submodule "hasktags"]
+    path = pkgs/hasktags
+    url = git@github.com:haskell-vanguard/hasktags
+[submodule "heap"]
+    path = pkgs/heap
+    url = git@github.com:haskell-vanguard/heap
+[submodule "heaps"]
+    path = pkgs/heaps
+    url = git@github.com:haskell-vanguard/heaps
+[submodule "hinotify"]
+    path = pkgs/hinotify
+    url = git@github.com:haskell-vanguard/hinotify
+[submodule "histogram-fill"]
+    path = pkgs/histogram-fill
+    url = git@github.com:haskell-vanguard/histogram-fill
+[submodule "hmatrix"]
+    path = pkgs/hmatrix
+    url = git@github.com:haskell-vanguard/hmatrix
+[submodule "hmatrix-gsl"]
+    path = pkgs/hmatrix-gsl
+    url = git@github.com:haskell-vanguard/hmatrix-gsl
+[submodule "hmatrix-quadprogpp"]
+    path = pkgs/hmatrix-quadprogpp
+    url = git@github.com:haskell-vanguard/hmatrix-quadprogpp
+[submodule "hostname"]
+    path = pkgs/hostname
+    url = git@github.com:haskell-vanguard/hostname
+[submodule "hourglass"]
+    path = pkgs/hourglass
+    url = git@github.com:haskell-vanguard/hourglass
+[submodule "hpath"]
+    path = pkgs/hpath
+    url = git@github.com:haskell-vanguard/hpath
+[submodule "hpp"]
+    path = pkgs/hpp
+    url = git@github.com:haskell-vanguard/hpp
+[submodule "hs-asn1"]
+    path = pkgs/hs-asn1
+    url = git@github.com:haskell-vanguard/hs-asn1
+[submodule "HsOpenSSL"]
+    path = pkgs/HsOpenSSL
+    url = git@github.com:haskell-vanguard/HsOpenSSL
+[submodule "hspec"]
+    path = pkgs/hspec
+    url = git@github.com:haskell-vanguard/hspec
+[submodule "hspec-core"]
+    path = pkgs/hspec-core
+    url = git@github.com:haskell-vanguard/hspec-core
+[submodule "hspec-discover"]
+    path = pkgs/hspec-discover
+    url = git@github.com:haskell-vanguard/hspec-discover
+[submodule "hspec-expectations"]
+    path = pkgs/hspec-expectations
+    url = git@github.com:haskell-vanguard/hspec-expectations
+[submodule "hs-tls"]
+    path = pkgs/hs-tls
+    url = git@github.com:haskell-vanguard/hs-tls
+[submodule "hsyslog"]
+    path = pkgs/hsyslog
+    url = git@github.com:haskell-vanguard/hsyslog
+[submodule "HTTP"]
+    path = pkgs/HTTP
+    url = git@github.com:haskell-vanguard/HTTP
+[submodule "http2"]
+    path = pkgs/http2
+    url = git@github.com:haskell-vanguard/http2
+[submodule "http-client"]
+    path = pkgs/http-client
+    url = git@github.com:haskell-vanguard/http-client
+[submodule "http-date"]
+    path = pkgs/http-date
+    url = git@github.com:haskell-vanguard/http-date
+[submodule "http-types"]
+    path = pkgs/http-types
+    url = git@github.com:haskell-vanguard/http-types
+[submodule "HUnit"]
+    path = pkgs/HUnit
+    url = git@github.com:haskell-vanguard/HUnit
+[submodule "IfElse"]
+    path = pkgs/IfElse
+    url = git@github.com:haskell-vanguard/IfElse
+[submodule "influxdb"]
+    path = pkgs/influxdb
+    url = git@github.com:haskell-vanguard/influxdb
+[submodule "integer-logarithms"]
+    path = pkgs/integer-logarithms
+    url = git@github.com:haskell-vanguard/integer-logarithms
+[submodule "intervals"]
+    path = pkgs/intervals
+    url = git@github.com:haskell-vanguard/intervals
+[submodule "invariant"]
+    path = pkgs/invariant
+    url = git@github.com:haskell-vanguard/invariant
+[submodule "iproute"]
+    path = pkgs/iproute
+    url = git@github.com:haskell-vanguard/iproute
+[submodule "iteratee"]
+    path = pkgs/iteratee
+    url = git@github.com:haskell-vanguard/iteratee
+[submodule "iteratee-compress"]
+    path = pkgs/iteratee-compress
+    url = git@github.com:haskell-vanguard/iteratee-compress
+[submodule "iter-stats"]
+    path = pkgs/iter-stats
+    url = git@github.com:haskell-vanguard/iter-stats
+[submodule "js-dgtable"]
+    path = pkgs/js-dgtable
+    url = git@github.com:haskell-vanguard/js-dgtable
+[submodule "js-flot"]
+    path = pkgs/js-flot
+    url = git@github.com:haskell-vanguard/js-flot
+[submodule "js-jquery"]
+    path = pkgs/js-jquery
+    url = git@github.com:haskell-vanguard/js-jquery
+[submodule "json"]
+    path = pkgs/json
+    url = git@github.com:haskell-vanguard/json
+[submodule "JuicyPixels"]
+    path = pkgs/JuicyPixels
+    url = git@github.com:haskell-vanguard/JuicyPixels
+[submodule "kan-extensions"]
+    path = pkgs/kan-extensions
+    url = git@github.com:haskell-vanguard/kan-extensions
+[submodule "kickchan"]
+    path = pkgs/kickchan
+    url = git@github.com:haskell-vanguard/kickchan
+[submodule "lens"]
+    path = pkgs/lens
+    url = git@github.com:haskell-vanguard/lens
+[submodule "lens-aeson"]
+    path = pkgs/lens-aeson
+    url = git@github.com:haskell-vanguard/lens-aeson
+[submodule "libyaml"]
+    path = pkgs/libyaml
+    url = git@github.com:haskell-vanguard/libyaml
+[submodule "lifted-async"]
+    path = pkgs/lifted-async
+    url = git@github.com:haskell-vanguard/lifted-async
+[submodule "lifted-base"]
+    path = pkgs/lifted-base
+    url = git@github.com:haskell-vanguard/lifted-base
+[submodule "limp"]
+    path = pkgs/limp
+    url = git@github.com:haskell-vanguard/limp
+[submodule "limp-ortools"]
+    path = pkgs/limp-ortools
+    url = git@github.com:haskell-vanguard/limp-ortools
+[submodule "linear"]
+    path = pkgs/linear
+    url = git@github.com:haskell-vanguard/linear
+[submodule "ListLike"]
+    path = pkgs/ListLike
+    url = git@github.com:haskell-vanguard/ListLike
+[submodule "lzma-maoe"]
+    path = pkgs/lzma-maoe
+    url = git@github.com:haskell-vanguard/lzma-maoe
+[submodule "maplike"]
+    path = pkgs/maplike
+    url = git@github.com:haskell-vanguard/maplike
+[submodule "math-functions"]
+    path = pkgs/math-functions
+    url = git@github.com:haskell-vanguard/math-functions
+[submodule "megaparsec"]
+    path = pkgs/megaparsec
+    url = git@github.com:haskell-vanguard/megaparsec
+[submodule "memory"]
+    path = pkgs/memory
+    url = git@github.com:haskell-vanguard/memory
+[submodule "MemoTrie"]
+    path = pkgs/MemoTrie
+    url = git@github.com:haskell-vanguard/MemoTrie
+[submodule "microlens"]
+    path = pkgs/microlens
+    url = git@github.com:haskell-vanguard/microlens
+[submodule "microstache"]
+    path = pkgs/microstache
+    url = git@github.com:haskell-vanguard/microstache
+[submodule "mime-mail"]
+    path = pkgs/mime-mail
+    url = git@github.com:haskell-vanguard/mime-mail
+[submodule "mime-types"]
+    path = pkgs/mime-types
+    url = git@github.com:haskell-vanguard/mime-types
+[submodule "mmorph"]
+    path = pkgs/mmorph
+    url = git@github.com:haskell-vanguard/mmorph
+[submodule "monad-control"]
+    path = pkgs/monad-control
+    url = git@github.com:haskell-vanguard/monad-control
+[submodule "monad-par"]
+    path = pkgs/monad-par
+    url = git@github.com:haskell-vanguard/monad-par
+[submodule "MonadRandom"]
+    path = pkgs/MonadRandom
+    url = git@github.com:haskell-vanguard/MonadRandom
+[submodule "monad-skeleton"]
+    path = pkgs/monad-skeleton
+    url = git@github.com:haskell-vanguard/monad-skeleton
+[submodule "monoid-extras"]
+    path = pkgs/monoid-extras
+    url = git@github.com:haskell-vanguard/monoid-extras
+[submodule "mono-traversable"]
+    path = pkgs/mono-traversable
+    url = git@github.com:haskell-vanguard/mono-traversable
+[submodule "murmur-hash"]
+    path = pkgs/murmur-hash
+    url = git@github.com:haskell-vanguard/murmur-hash
+[submodule "mwc-random"]
+    path = pkgs/mwc-random
+    url = git@github.com:haskell-vanguard/mwc-random
+[submodule "network"]
+    path = pkgs/network
+    url = git@github.com:haskell-vanguard/network
+[submodule "network-bsd"]
+    path = pkgs/network-bsd
+    url = git@github.com:haskell-vanguard/network-bsd
+[submodule "network-byte-order"]
+    path = pkgs/network-byte-order
+    url = git@github.com:haskell-vanguard/network-byte-order
+[submodule "network-multicast"]
+    path = pkgs/network-multicast
+    url = git@github.com:haskell-vanguard/network-multicast
+[submodule "network-uri"]
+    path = pkgs/network-uri
+    url = git@github.com:haskell-vanguard/network-uri
+[submodule "newtype-generics"]
+    path = pkgs/newtype-generics
+    url = git@github.com:haskell-vanguard/newtype-generics
+[submodule "NumInstances"]
+    path = pkgs/NumInstances
+    url = git@github.com:haskell-vanguard/NumInstances
+[submodule "ObjectName"]
+    path = pkgs/ObjectName
+    url = git@github.com:haskell-vanguard/ObjectName
+[submodule "old-locale"]
+    path = pkgs/old-locale
+    url = git@github.com:haskell-vanguard/old-locale
+[submodule "Only"]
+    path = pkgs/Only
+    url = git@github.com:haskell-vanguard/Only
+[submodule "OpenGL"]
+    path = pkgs/OpenGL
+    url = git@github.com:haskell-vanguard/OpenGL
+[submodule "OpenGLRaw"]
+    path = pkgs/OpenGLRaw
+    url = git@github.com:haskell-vanguard/OpenGLRaw
+[submodule "operational"]
+    path = pkgs/operational
+    url = git@github.com:haskell-vanguard/operational
+[submodule "optional-args"]
+    path = pkgs/optional-args
+    url = git@github.com:haskell-vanguard/optional-args
+[submodule "optparse-applicative"]
+    path = pkgs/optparse-applicative
+    url = git@github.com:haskell-vanguard/optparse-applicative
+[submodule "pango"]
+    path = pkgs/pango
+    url = git@github.com:haskell-vanguard/pango
+[submodule "parallel"]
+    path = pkgs/parallel
+    url = git@github.com:haskell-vanguard/parallel
+[submodule "parser-combinators"]
+    path = pkgs/parser-combinators
+    url = git@github.com:haskell-vanguard/parser-combinators
+[submodule "parsergen"]
+    path = pkgs/parsergen
+    url = git@github.com:haskell-vanguard/parsergen
+[submodule "path"]
+    path = pkgs/path
+    url = git@github.com:haskell-vanguard/path
+[submodule "pem"]
+    path = pkgs/pem
+    url = git@github.com:haskell-vanguard/pem
+[submodule "piecewise-polynomial"]
+    path = pkgs/piecewise-polynomial
+    url = git@github.com:haskell-vanguard/piecewise-polynomial
+[submodule "pipes"]
+    path = pkgs/pipes
+    url = git@github.com:haskell-vanguard/pipes
+[submodule "pipes-safe"]
+    path = pkgs/pipes-safe
+    url = git@github.com:haskell-vanguard/pipes-safe
+[submodule "pointed"]
+    path = pkgs/pointed
+    url = git@github.com:haskell-vanguard/pointed
+[submodule "prettyprinter"]
+    path = pkgs/prettyprinter
+    url = git@github.com:haskell-vanguard/prettyprinter
+[submodule "prettyprinter-ansi-terminal"]
+    path = pkgs/prettyprinter-ansi-terminal
+    url = git@github.com:haskell-vanguard/prettyprinter-ansi-terminal
+[submodule "pretty-show"]
+    path = pkgs/pretty-show
+    url = git@github.com:haskell-vanguard/pretty-show
+[submodule "primitive"]
+    path = pkgs/primitive
+    url = git@github.com:haskell-vanguard/primitive
+[submodule "process-extras"]
+    path = pkgs/process-extras
+    url = git@github.com:haskell-vanguard/process-extras
+[submodule "profunctors"]
+    path = pkgs/profunctors
+    url = git@github.com:haskell-vanguard/profunctors
+[submodule "psqueues"]
+    path = pkgs/psqueues
+    url = git@github.com:haskell-vanguard/psqueues
+[submodule "QuickCheck"]
+    path = pkgs/QuickCheck
+    url = git@github.com:haskell-vanguard/QuickCheck
+[submodule "quickcheck-io"]
+    path = pkgs/quickcheck-io
+    url = git@github.com:haskell-vanguard/quickcheck-io
+[submodule "random"]
+    path = pkgs/random
+    url = git@github.com:haskell-vanguard/random
+[submodule "reflection"]
+    path = pkgs/reflection
+    url = git@github.com:haskell-vanguard/reflection
+[submodule "regex-base"]
+    path = pkgs/regex-base
+    url = git@github.com:haskell-vanguard/regex-base
+[submodule "regex-compat"]
+    path = pkgs/regex-compat
+    url = git@github.com:haskell-vanguard/regex-compat
+[submodule "regex-posix"]
+    path = pkgs/regex-posix
+    url = git@github.com:haskell-vanguard/regex-posix
+[submodule "resourcet"]
+    path = pkgs/resourcet
+    url = git@github.com:haskell-vanguard/resourcet
+[submodule "retry"]
+    path = pkgs/retry
+    url = git@github.com:haskell-vanguard/retry
+[submodule "SafeSemaphore"]
+    path = pkgs/SafeSemaphore
+    url = git@github.com:haskell-vanguard/SafeSemaphore
+[submodule "scientific"]
+    path = pkgs/scientific
+    url = git@github.com:haskell-vanguard/scientific
+[submodule "semigroupoids"]
+    path = pkgs/semigroupoids
+    url = git@github.com:haskell-vanguard/semigroupoids
+[submodule "semigroups"]
+    path = pkgs/semigroups
+    url = git@github.com:haskell-vanguard/semigroups
+[submodule "sendfile"]
+    path = pkgs/sendfile
+    url = git@github.com:haskell-vanguard/sendfile
+[submodule "serialise"]
+    path = pkgs/serialise
+    url = git@github.com:haskell-vanguard/serialise
+[submodule "setenv"]
+    path = pkgs/setenv
+    url = git@github.com:haskell-vanguard/setenv
+[submodule "SHA"]
+    path = pkgs/SHA
+    url = git@github.com:haskell-vanguard/SHA
+[submodule "shake"]
+    path = pkgs/shake
+    url = git@github.com:haskell-vanguard/shake
+[submodule "shared-buffer"]
+    path = pkgs/shared-buffer
+    url = git@github.com:haskell-vanguard/shared-buffer
+[submodule "simple-sendfile"]
+    path = pkgs/simple-sendfile
+    url = git@github.com:haskell-vanguard/simple-sendfile
+[submodule "snappy"]
+    path = pkgs/snappy
+    url = git@github.com:haskell-vanguard/snappy
+[submodule "socks"]
+    path = pkgs/socks
+    url = git@github.com:haskell-vanguard/socks
+[submodule "split"]
+    path = pkgs/split
+    url = git@github.com:haskell-vanguard/split
+[submodule "splitmix"]
+    path = pkgs/splitmix
+    url = git@github.com:haskell-vanguard/splitmix
+[submodule "sqroll"]
+    path = pkgs/sqroll
+    url = git@github.com:haskell-vanguard/sqroll
+[submodule "statestack"]
+    path = pkgs/statestack
+    url = git@github.com:haskell-vanguard/statestack
+[submodule "StateVar"]
+    path = pkgs/StateVar
+    url = git@github.com:haskell-vanguard/StateVar
+[submodule "statistics"]
+    path = pkgs/statistics
+    url = git@github.com:haskell-vanguard/statistics
+[submodule "stm-delay"]
+    path = pkgs/stm-delay
+    url = git@github.com:haskell-vanguard/stm-delay
+[submodule "storable-complex"]
+    path = pkgs/storable-complex
+    url = git@github.com:haskell-vanguard/storable-complex
+[submodule "streaming-commons"]
+    path = pkgs/streaming-commons
+    url = git@github.com:haskell-vanguard/streaming-commons
+[submodule "streams"]
+    path = pkgs/streams
+    url = git@github.com:haskell-vanguard/streams
+[submodule "svg-builder"]
+    path = pkgs/svg-builder
+    url = git@github.com:haskell-vanguard/svg-builder
+[submodule "syb"]
+    path = pkgs/syb
+    url = git@github.com:haskell-vanguard/syb
+[submodule "tagged"]
+    path = pkgs/tagged
+    url = git@github.com:haskell-vanguard/tagged
+[submodule "tagsoup"]
+    path = pkgs/tagsoup
+    url = git@github.com:haskell-vanguard/tagsoup
+[submodule "temporary"]
+    path = pkgs/temporary
+    url = git@github.com:haskell-vanguard/temporary
+[submodule "test-framework"]
+    path = pkgs/test-framework
+    url = git@github.com:haskell-vanguard/test-framework
+[submodule "test-framework-hunit"]
+    path = pkgs/test-framework-hunit
+    url = git@github.com:haskell-vanguard/test-framework-hunit
+[submodule "test-framework-quickcheck2"]
+    path = pkgs/test-framework-quickcheck2
+    url = git@github.com:haskell-vanguard/test-framework-quickcheck2
+[submodule "text-short"]
+    path = pkgs/text-short
+    url = git@github.com:haskell-vanguard/text-short
+[submodule "tf-random"]
+    path = pkgs/tf-random
+    url = git@github.com:haskell-vanguard/tf-random
+[submodule "th-abstraction"]
+    path = pkgs/th-abstraction
+    url = git@github.com:haskell-vanguard/th-abstraction
+[submodule "th-lift"]
+    path = pkgs/th-lift
+    url = git@github.com:haskell-vanguard/th-lift
+[submodule "thyme"]
+    path = pkgs/thyme
+    url = git@github.com:haskell-vanguard/thyme
+[submodule "total-array"]
+    path = pkgs/total-array
+    url = git@github.com:haskell-vanguard/total-array
+[submodule "transformers-base"]
+    path = pkgs/transformers-base
+    url = git@github.com:haskell-vanguard/transformers-base
+[submodule "transformers-compat"]
+    path = pkgs/transformers-compat
+    url = git@github.com:haskell-vanguard/transformers-compat
+[submodule "true-name"]
+    path = pkgs/true-name
+    url = git@github.com:haskell-vanguard/true-name
+[submodule "unix-bytestring"]
+    path = pkgs/unix-bytestring
+    url = git@github.com:haskell-vanguard/unix-bytestring
+[submodule "unix-compat"]
+    path = pkgs/unix-compat
+    url = git@github.com:haskell-vanguard/unix-compat
+[submodule "unliftio"]
+    path = pkgs/unliftio
+    url = git@github.com:haskell-vanguard/unliftio
+[submodule "unordered-containers"]
+    path = pkgs/unordered-containers
+    url = git@github.com:haskell-vanguard/unordered-containers
+[submodule "utf8-string"]
+    path = pkgs/utf8-string
+    url = git@github.com:haskell-vanguard/utf8-string
+[submodule "uuid-types"]
+    path = pkgs/uuid-types
+    url = git@github.com:haskell-vanguard/uuid-types
+[submodule "vault"]
+    path = pkgs/vault
+    url = git@github.com:haskell-vanguard/vault
+[submodule "vector"]
+    path = pkgs/vector
+    url = git@github.com:haskell-vanguard/vector
+[submodule "vector-algorithms"]
+    path = pkgs/vector-algorithms
+    url = git@github.com:haskell-vanguard/vector-algorithms
+[submodule "vector-binary-instances"]
+    path = pkgs/vector-binary-instances
+    url = git@github.com:haskell-vanguard/vector-binary-instances
+[submodule "vector-builder"]
+    path = pkgs/vector-builder
+    url = git@github.com:haskell-vanguard/vector-builder
+[submodule "vector-space"]
+    path = pkgs/vector-space
+    url = git@github.com:haskell-vanguard/vector-space
+[submodule "vector-th-unbox"]
+    path = pkgs/vector-th-unbox
+    url = git@github.com:haskell-vanguard/vector-th-unbox
+[submodule "void"]
+    path = pkgs/void
+    url = git@github.com:haskell-vanguard/void
+[submodule "wai"]
+    path = pkgs/wai
+    url = git@github.com:haskell-vanguard/wai
+[submodule "webserver"]
+    path = pkgs/webserver
+    url = git@github.com:haskell-vanguard/webserver
+[submodule "websockets"]
+    path = pkgs/websockets
+    url = git@github.com:haskell-vanguard/websockets
+[submodule "word8"]
+    path = pkgs/word8
+    url = git@github.com:haskell-vanguard/word8
+[submodule "x509"]
+    path = pkgs/x509
+    url = git@github.com:haskell-vanguard/x509
+[submodule "xml"]
+    path = pkgs/xml
+    url = git@github.com:haskell-vanguard/xml
+[submodule "yaml"]
+    path = pkgs/yaml
+    url = git@github.com:haskell-vanguard/yaml
+[submodule "zlib"]
+    path = pkgs/zlib
+    url = git@github.com:haskell-vanguard/zlib
