@@ -820,3 +820,27 @@
 [submodule "zlib"]
     path = pkgs/zlib
     url = git@github.com:haskell-vanguard/zlib
+[submodule "pkgs/happy"]
+	path = pkgs/happy
+	url = git@github.com:simonmar/happy
+[submodule "pkgs/edit-distance"]
+	path = pkgs/edit-distance
+	url = git@github.com:phadej/edit-distance
+[submodule "pkgs/echo"]
+	path = pkgs/echo
+	url = git@github.com:RyanGlSCott/echo
+[submodule "pkgs/base16-bytestring"]
+	path = pkgs/base16-bytestring
+	url = git@github.com:bos/base16-bytestring
+[submodule "pkgs/hfsnotify"]
+	path = pkgs/hfsnotify
+	url = git@github.com:haskell-fswatch/hfsnotify.git
+[submodule "pkgs/Shelly.hs"]
+	path = pkgs/Shelly.hs
+	url = git@github.com:yesodweb/Shelly.hs
+[submodule "pkgs/typed-process"]
+	path = pkgs/typed-process
+	url = https://github.com/fpco/typed-process
+[submodule "pkgs/aeson-pretty"]
+	path = pkgs/aeson-pretty
+	url = https://github.com/informatikr/aeson-pretty
