@@ -844,3 +844,36 @@
 [submodule "zlib"]
     path = pkgs/zlib
     url = git@github.com:haskell-vanguard/zlib
+[submodule "pkgs/IfElse"]
+	path = pkgs/IfElse
+	url = git@github.com:haskell-vanguard/IfElse.git
+[submodule "pkgs/colour"]
+	path = pkgs/colour
+	url = git@github.com:haskell-vanguard/colour.git
+[submodule "pkgs/erf"]
+	path = pkgs/erf
+	url = git@github.com:haskell-vanguard/erf.git
+[submodule "pkgs/fingertree"]
+	path = pkgs/fingertree
+	url = git@github.com:haskell-vanguard/fingertree
+[submodule "pkgs/groups"]
+	path = pkgs/groups
+	url = git@github.com:haskell-vanguard/groups
+[submodule "pkgs/hostname"]
+	path = pkgs/hostname
+	url = git@github.com:haskell-vanguard/hostname
+[submodule "pkgs/regex-base"]
+	path = pkgs/regex-base
+	url = git@github.com:haskell-vanguard/regex-base
+[submodule "pkgs/regex-posix"]
+	path = pkgs/regex-posix
+	url = git@github.com:haskell-vanguard/regex-posix
+[submodule "pkgs/regex-compat"]
+	path = pkgs/regex-compat
+	url = git@github.com:haskell-vanguard/regex-compat
+[submodule "pkgs/sendfile"]
+	path = pkgs/sendfile
+	url = git@github.com:haskell-vanguard/sendfile
+[submodule "pkgs/tf-random"]
+	path = pkgs/tf-random
+	url = git@github.com:haskell-vanguard/tf-random
