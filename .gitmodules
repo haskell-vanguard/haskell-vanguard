@@ -61,9 +61,6 @@
 [submodule "blaze-builder"]
     path = pkgs/blaze-builder
     url = git@github.com:haskell-vanguard/blaze-builder
-[submodule "blaze-html"]
-    path = pkgs/blaze-html
-    url = git@github.com:haskell-vanguard/blaze-html
 [submodule "blaze-markup"]
     path = pkgs/blaze-markup
     url = git@github.com:haskell-vanguard/blaze-markup
@@ -835,6 +832,9 @@
 [submodule "vector-space"]
     path = pkgs/vector-space
     url = git@github.com:haskell-vanguard/vector-space
+[submodule "vector-th-unbox"]
+    path = pkgs/vector-th-unbox
+    url = git@github.com:haskell-vanguard/vector-th-unbox
 [submodule "void"]
     path = pkgs/void
     url = git@github.com:haskell-vanguard/void
