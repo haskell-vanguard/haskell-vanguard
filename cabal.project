@@ -20,8 +20,6 @@ packages: ./
   pkgs/basement/basement/
   pkgs/uuid-types/uuid-types/
   pkgs/hackage-security/hackage-security
-  pkgs/gtk/*/
-  pkgs/gtk/gtk/gtk.cabal
   pkgs/base-compat/*/
   pkgs/conduit/*/
   pkgs/cborg/*/

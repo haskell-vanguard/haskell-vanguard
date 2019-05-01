@@ -460,9 +460,6 @@
 [submodule "limp"]
     path = pkgs/limp
     url = git@github.com:haskell-vanguard/limp
-[submodule "limp-ortools"]
-    path = pkgs/limp-ortools
-    url = git@gitlab.tsuru.it:tsuru/limp-ortools.git
 [submodule "linear"]
     path = pkgs/linear
     url = git@github.com:haskell-vanguard/linear
@@ -592,6 +589,9 @@
 [submodule "pem"]
     path = pkgs/pem
     url = git@github.com:haskell-vanguard/hs-pem
+[submodule "piecewise-polynomial"]
+    path = pkgs/piecewise-polynomial
+    url = git@github.com:haskell-vanguard/piecewise-polynomial
 [submodule "pipes"]
     path = pkgs/pipes
     url = git@github.com:haskell-vanguard/Haskell-Pipes-Library
@@ -700,9 +700,6 @@
 [submodule "splitmix"]
     path = pkgs/splitmix
     url = git@github.com:haskell-vanguard/splitmix
-[submodule "sqroll"]
-    path = pkgs/sqroll
-    url = git@gitlab.tsuru.it:tsuru/sqroll
 [submodule "statestack"]
     path = pkgs/statestack
     url = git@github.com:haskell-vanguard/statestack

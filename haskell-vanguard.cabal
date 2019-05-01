@@ -145,7 +145,6 @@ library
     , lifted-async
     , lifted-base
     , limp
-    , limp-ortools
     , linear
     , ListLike
     , maplike
@@ -189,7 +188,6 @@ library
     , parsergen
     , path
     , pem
-    , piecewise-polynomial
     , pipes
     , pipes-safe
     , pointed
