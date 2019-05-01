@@ -37,7 +37,8 @@ packages: ./
   pkgs/hspec/*/
   pkgs/statistics/dense-linear-algebra/
   pkgs/logger/*/
-  pkgs/yaml/libyaml/
+  pkgs/yaml/*/
+  pkgs/mono-traversable/mono-traversable/
 
 benchmarks: False
 tests: False

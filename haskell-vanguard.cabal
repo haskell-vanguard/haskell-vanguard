@@ -44,7 +44,6 @@ library
     , base-prelude
     , bifunctors
     , blaze-builder
-    , blaze-html
     , blaze-markup
     , Boolean
     , BoundedChan
@@ -54,14 +53,12 @@ library
     , bytes
     , Cabal == 2.5.0.0
     , cabal-doctest
-    , cairo
     , call-stack
     , case-insensitive
     , cassava
     , cborg
     , cereal
     , Chart
-    , Chart-cairo
     , clock
     , cmdargs
     , code-page
@@ -104,14 +101,9 @@ library
     , gauge
     , generic-deriving
     , ghc-paths
-    , gio
-    , glib
     , Glob
     , GLURaw
     , GLUtil
-    , gtk
-    , gtk2hs-buildtools
-    , gtkglext
     , half
     , hashable
     , hashtables
@@ -141,7 +133,6 @@ library
     , invariant
     , iproute
     , iteratee
-    , iteratee-compress
     , js-dgtable
     , js-flot
     , js-jquery
@@ -193,7 +184,6 @@ library
     , operational
     , optional-args
     , optparse-applicative
-    , pango
     , parallel
     , parser-combinators
     , parsergen
@@ -205,7 +195,6 @@ library
     , pointed
     , prettyprinter
     , prettyprinter-ansi-terminal
-    , pretty-show
     , primitive
     , process-extras
     , profunctors
