@@ -877,3 +877,6 @@
 [submodule "pkgs/tf-random"]
 	path = pkgs/tf-random
 	url = git@github.com:haskell-vanguard/tf-random
+[submodule "pkgs/byteorder"]
+	path = pkgs/byteorder
+	url = git@github.com:haskell-vanguard/byteorder
