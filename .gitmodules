@@ -169,9 +169,6 @@
 [submodule "data-default"]
     path = pkgs/data-default
     url = git@github.com:haskell-vanguard/data-default
-[submodule "diagrams-cairo"]
-    path = pkgs/diagrams-cairo
-    url = git@github.com:haskell-vanguard/diagrams-cairo
 [submodule "diagrams-core"]
     path = pkgs/diagrams-core
     url = git@github.com:haskell-vanguard/diagrams-core
@@ -295,12 +292,6 @@
 [submodule "groups"]
     path = pkgs/groups
     url = git@github.com:haskell-vanguard/groups
-[submodule "gtk"]
-    path = pkgs/gtk
-    url = git@github.com:haskell-vanguard/gtk2hs
-[submodule "gtkglext"]
-    path = pkgs/gtkglext
-    url = git@github.com:haskell-vanguard/gtkglext
 [submodule "hackage-security"]
     path = pkgs/hackage-security
     url = git@github.com:haskell-vanguard/hackage-security
@@ -601,9 +592,6 @@
 [submodule "pem"]
     path = pkgs/pem
     url = git@github.com:haskell-vanguard/hs-pem
-[submodule "piecewise-polynomial"]
-    path = pkgs/piecewise-polynomial
-    url = git@github.com:haskell-vanguard/piecewise-polynomial
 [submodule "pipes"]
     path = pkgs/pipes
     url = git@github.com:haskell-vanguard/Haskell-Pipes-Library
