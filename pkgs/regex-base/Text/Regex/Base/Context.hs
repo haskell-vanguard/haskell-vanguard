@@ -1,3 +1,4 @@
+{-# LANGUAGE CPP #-}
 {-# LANGUAGE MultiParamTypeClasses, FunctionalDependencies #-}
 {-# OPTIONS_GHC -fno-warn-orphans #-}
 {-|
@@ -33,7 +34,7 @@ case it calls 'fail' in the (arbitrary) monad context.
 
 There are a few type synonyms from RegexLike that are used here:
 
-@ 
+@
 -- | 0 based index from start of source, or (-1) for unused
 type MatchOffset = Int
 -- | non-negative length of a match
@@ -105,7 +106,7 @@ These are for finding the first match in the target text:
   The text before the match, the details of the match, and the text after the match
 
 
-@ RegexContext a b (b, b, b, [b]) @ : 
+@ RegexContext a b (b, b, b, [b]) @ :
   The text before the match, the text of the match, the text after the
   match, and a list of the text of the 1st and higher sub-parts of the
   match.  This is the same return value as used in the old
@@ -187,6 +188,7 @@ Unused matches are 'empty' (defined via 'Extract')
 module Text.Regex.Base.Context() where
 
 import Control.Monad(liftM)
+import Control.Monad.Fail (MonadFail)
 import Data.Array(Array,(!),elems,listArray)
 --  import Data.Maybe(maybe)
 import Text.Regex.Base.RegexLike(RegexLike(..),RegexContext(..)
@@ -244,29 +246,29 @@ nullArray :: Array Int a
 {-# INLINE nullArray #-}
 nullArray = listArray (1,0) []
 
-nullFail :: (RegexContext regex source (AllMatches [] target),Monad m) => regex -> source -> m (AllMatches [] target)
+nullFail :: (RegexContext regex source (AllMatches [] target),MonadFail m) => regex -> source -> m (AllMatches [] target)
 {-# INLINE nullFail #-}
 nullFail r s = case match r s of
                  (AllMatches []) -> regexFailed
                  xs -> return xs
 
-nullFailText :: (RegexContext regex source (AllTextMatches [] target),Monad m) => regex -> source -> m (AllTextMatches [] target)
+nullFailText :: (RegexContext regex source (AllTextMatches [] target),MonadFail m) => regex -> source -> m (AllTextMatches [] target)
 {-# INLINE nullFailText #-}
 nullFailText r s = case match r s of
                      (AllTextMatches []) -> regexFailed
                      xs -> return xs
 
-nullFail' :: (RegexContext regex source ([] target),Monad m) => regex -> source -> m ([] target)
+nullFail' :: (RegexContext regex source ([] target),MonadFail m) => regex -> source -> m ([] target)
 {-# INLINE nullFail' #-}
 nullFail' r s = case match r s of
                  ([]) -> regexFailed
                  xs -> return xs
 
-regexFailed :: (Monad m) => m b
+regexFailed :: (MonadFail m) => m b
 {-# INLINE regexFailed #-}
 regexFailed =  fail $ "regex failed to match"
 
-actOn :: (RegexLike r s,Monad m) => ((s,MatchText s,s)->t) -> r -> s -> m t
+actOn :: (RegexLike r s,MonadFail m) => ((s,MatchText s,s)->t) -> r -> s -> m t
 {-# INLINE actOn #-}
 actOn f r s = case matchOnceText r s of
     Nothing -> regexFailed
@@ -274,7 +276,7 @@ actOn f r s = case matchOnceText r s of
 
 -- ** Instances based on matchTest ()
 
-instance (RegexLike a b) => RegexContext a b Bool where 
+instance (RegexLike a b) => RegexContext a b Bool where
   match = matchTest
   matchM r s = case match r s of
                  False -> regexFailed
@@ -296,14 +298,14 @@ instance (RegexLike a b) => RegexContext a b Int where
 
 -- ** Instances based on matchOnce,matchOnceText
 
-instance (RegexLike a b) => RegexContext a b (MatchOffset,MatchLength) where 
+instance (RegexLike a b) => RegexContext a b (MatchOffset,MatchLength) where
   match r s = maybe (-1,0) (!0) (matchOnce r s)
   matchM r s = maybe regexFailed (return.(!0)) (matchOnce r s)
 
-instance (RegexLike a b) => RegexContext a b (MatchResult b) where 
+instance (RegexLike a b) => RegexContext a b (MatchResult b) where
   match r s = maybe (MR {mrBefore = s,mrMatch = empty,mrAfter = empty
                         ,mrSubs = nullArray,mrSubList = []}) id (matchM r s)
-  matchM = actOn (\(pre,ma,post) -> 
+  matchM = actOn (\(pre,ma,post) ->
      let ((whole,_):subs) = elems ma
      in MR { mrBefore = pre
            , mrMatch = whole
@@ -311,42 +313,42 @@ instance (RegexLike a b) => RegexContext a b (MatchResult b) where
            , mrSubs = fmap fst ma
            , mrSubList = map fst subs })
 
-instance (RegexLike a b) => RegexContext a b (b,MatchText b,b) where 
+instance (RegexLike a b) => RegexContext a b (b,MatchText b,b) where
   match r s = maybe (s,nullArray,empty) id (matchOnceText r s)
   matchM r s = maybe regexFailed return (matchOnceText r s)
 
-instance (RegexLike a b) => RegexContext a b (b,b,b) where 
+instance (RegexLike a b) => RegexContext a b (b,b,b) where
   match r s = maybe (s,empty,empty) id (matchM r s)
   matchM = actOn (\(pre,ma,post) -> let ((whole,_):_) = elems ma
                                     in (pre,whole,post))
 
-instance (RegexLike a b) => RegexContext a b (b,b,b,[b]) where 
+instance (RegexLike a b) => RegexContext a b (b,b,b,[b]) where
   match r s = maybe (s,empty,empty,[]) id (matchM r s)
   matchM = actOn (\(pre,ma,post) -> let ((whole,_):subs) = elems ma
                                     in (pre,whole,post,map fst subs))
 
 -- now AllSubmatches wrapper
-instance (RegexLike a b) => RegexContext a b MatchArray where 
+instance (RegexLike a b) => RegexContext a b MatchArray where
   match r s = maybe nullArray id (matchOnce r s)
   matchM r s = maybe regexFailed return (matchOnce r s)
-instance (RegexLike a b) => RegexContext a b (AllSubmatches [] (MatchOffset,MatchLength)) where 
+instance (RegexLike a b) => RegexContext a b (AllSubmatches [] (MatchOffset,MatchLength)) where
   match r s = maybe (AllSubmatches []) id (matchM r s)
   matchM r s = case matchOnce r s of
                  Nothing -> regexFailed
                  Just ma -> return (AllSubmatches (elems ma))
 
 -- essentially AllSubmatches applied to (MatchText b)
-instance (RegexLike a b) => RegexContext a b (AllTextSubmatches (Array Int) (b, (MatchOffset, MatchLength))) where 
+instance (RegexLike a b) => RegexContext a b (AllTextSubmatches (Array Int) (b, (MatchOffset, MatchLength))) where
   match r s = maybe (AllTextSubmatches nullArray) id (matchM r s)
   matchM r s = actOn (\(_,ma,_) -> AllTextSubmatches ma) r s
-instance (RegexLike a b) => RegexContext a b (AllTextSubmatches [] (b, (MatchOffset, MatchLength))) where 
+instance (RegexLike a b) => RegexContext a b (AllTextSubmatches [] (b, (MatchOffset, MatchLength))) where
   match r s = maybe (AllTextSubmatches []) id (matchM r s)
   matchM r s = actOn (\(_,ma,_) -> AllTextSubmatches (elems ma)) r s
 
-instance (RegexLike a b) => RegexContext a b (AllTextSubmatches [] b) where 
+instance (RegexLike a b) => RegexContext a b (AllTextSubmatches [] b) where
   match r s = maybe (AllTextSubmatches []) id (matchM r s)
   matchM r s = liftM AllTextSubmatches $ actOn (\(_,ma,_) -> map fst . elems $ ma) r s
-instance (RegexLike a b) => RegexContext a b (AllTextSubmatches (Array Int) b) where 
+instance (RegexLike a b) => RegexContext a b (AllTextSubmatches (Array Int) b) where
   match r s = maybe (AllTextSubmatches nullArray) id (matchM r s)
   matchM r s = liftM AllTextSubmatches $ actOn (\(_,ma,_) -> fmap fst ma) r s
 

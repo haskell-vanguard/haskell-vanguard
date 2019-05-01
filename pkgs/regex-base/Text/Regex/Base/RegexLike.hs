@@ -1,20 +1,21 @@
+{-# LANGUAGE CPP #-}
 {-# LANGUAGE MultiParamTypeClasses, FunctionalDependencies #-}
 -----------------------------------------------------------------------------
 -- |
 -- Module      :  Text.Regex.Base.RegexLike
 -- Copyright   :  (c) Chris Kuklewicz 2006
 -- License     :  BSD-style (see the file LICENSE)
--- 
+--
 -- Maintainer  :  libraries@haskell.org, textregexlazy@personal.mightyreason.com
 -- Stability   :  experimental
 -- Portability :  non-portable (MPTC+FD)
 --
 -- Classes and instances for Regex matching.
 --
--- 
+--
 -- All the classes are declared here, and some common type aliases, and
 -- the MatchResult data type.
--- 
+--
 -- The only instances here are for Extract String and Extract ByteString.
 -- There are no data values.  The 'RegexContext' instances are in
 -- "Text.Regex.Base.Context", except for ones which run afoul of a
@@ -39,6 +40,9 @@ module Text.Regex.Base.RegexLike (
   AllSubmatches(..),AllTextSubmatches(..),AllMatches(..),AllTextMatches(..)
   ) where
 
+#if !MIN_VERSION_base(4,13,0)
+import Control.Monad.Fail (MonadFail)
+#endif
 import Data.Array(Array,(!))
 import Data.Maybe(isJust)
 import qualified Data.ByteString as B (take,drop,empty,ByteString)
@@ -70,7 +74,7 @@ data MatchResult a = MR {
 -- and never changed are CompOpt.  Those that can be changed later and
 -- affect how matching is performed are ExecOpt.  The actually types
 -- for these depend on the backend.
-class RegexOptions regex compOpt execOpt 
+class RegexOptions regex compOpt execOpt
   | regex->compOpt execOpt, compOpt->regex execOpt, execOpt->regex compOpt where
   blankCompOpt :: compOpt    -- ^ no options set at all in the backend
   blankExecOpt :: execOpt    -- ^ no options set at all in the backend
@@ -86,7 +90,7 @@ class RegexOptions regex compOpt execOpt
 -- expression from a source type and an option type.  'makeRegexM' and
 -- 'makeRegexM' report parse error using 'MonadError', usually (Either
 -- String regex).
--- 
+--
 -- The 'makeRegex' function has a default implementation that depends
 -- on makeRegexOpts and used 'defaultCompOpt' and 'defaultExecOpt'.
 -- Similarly for 'makeRegexM' and 'makeRegexOptsM'.
@@ -95,16 +99,16 @@ class RegexOptions regex compOpt execOpt
 -- 'makeRegexOptsM' in terms of each other.  So a minimal instance
 -- definition needs to only define one of these, hopefully
 -- 'makeRegexOptsM'.
-class (RegexOptions regex compOpt execOpt) => RegexMaker regex compOpt execOpt source 
+class (RegexOptions regex compOpt execOpt) => RegexMaker regex compOpt execOpt source
   | regex -> compOpt execOpt, compOpt -> regex execOpt, execOpt -> regex compOpt where
   -- | make using the defaultCompOpt and defaultExecOpt
   makeRegex :: source -> regex
   -- | Specify your own options
   makeRegexOpts :: compOpt -> execOpt -> source -> regex
   -- | make using the defaultCompOpt and defaultExecOpt, reporting errors with fail
-  makeRegexM :: (Monad m) => source -> m regex
+  makeRegexM :: (MonadFail m) => source -> m regex
   -- | Specify your own options, reporting errors with fail
-  makeRegexOptsM :: (Monad m) => compOpt -> execOpt -> source -> m regex
+  makeRegexOptsM :: (MonadFail m) => compOpt -> execOpt -> source -> m regex
 
   makeRegex = makeRegexOpts defaultCompOpt defaultExecOpt
   makeRegexM = makeRegexOptsM defaultCompOpt defaultExecOpt
@@ -157,7 +161,7 @@ class (Extract source)=> RegexLike regex source where
   matchOnce regex source = fmap (\(_,mt,_) -> fmap snd mt) (matchOnceText regex source)
   matchTest regex source = isJust (matchOnce regex source)
   matchCount regex source = length (matchAll regex source)
-  matchOnceText regex source = 
+  matchOnceText regex source =
     fmap (\ma -> let (o,l) = ma!0
                  in (before o source
                     ,fmap (\ol -> (extract ol source,ol)) ma
@@ -189,7 +193,7 @@ class (Extract source)=> RegexLike regex source where
 -- > ["b","c","d","f","g","h","j","k","l","m","n","p","q","r","s","t","v","w","x","y","z"]
 class (RegexLike regex source) => RegexContext regex source target where
   match :: regex -> source -> target
-  matchM :: (Monad m) => regex -> source -> m target
+  matchM :: (MonadFail m) => regex -> source -> m target
 
 ----------------
 -- | Extract allows for indexing operations on String or ByteString.

@@ -1,14 +1,42 @@
 packages: ./
   pkgs/*/
+  pkgs/cabal/cabal-install/
+  pkgs/cabal/Cabal/
+  pkgs/data-default/*/
+  pkgs/criterion/criterion-measurement/
   pkgs/unliftio/*/
   pkgs/http-client/*/
-  pkgs/wai/*/
+  pkgs/wai/wai/
+  pkgs/wai/warp/
+  pkgs/wai/warp-tls/
+  pkgs/wai/wai-conduit/
+  pkgs/wai/mime-types/
+  pkgs/wai/auto-update/
+  pkgs/hs-tls/core
+  pkgs/hs-tls/session
   pkgs/x509/*/
   pkgs/microlens/*/
-  pkgs/ghc-dump-core/*/
   pkgs/prettyprinter/*/*
   pkgs/basement/basement/
   pkgs/uuid-types/uuid-types/
+  pkgs/hackage-security/hackage-security
+  pkgs/gtk/*/
+  pkgs/base-compat/*/
+  pkgs/conduit/*/
+  pkgs/cborg/*/
+  pkgs/monad-par/monad-par-extras/
+  pkgs/monad-par/monad-par/
+  pkgs/monad-par/abstract-par/
+  pkgs/hmatrix/packages/base/
+  pkgs/hmatrix/packages/gsl/
+  pkgs/asn1/*/
+  pkgs/haskell-lockfree/abstract-deque
+  pkgs/Chart/chart/
+  pkgs/Chart/chart-cairo/
+  pkgs/hspec/*/
+  pkgs/statistics/dense-linear-algebra/
+  pkgs/logger/*/
+  pkgs/yaml/libyaml/
 
 benchmarks: False
 tests: False

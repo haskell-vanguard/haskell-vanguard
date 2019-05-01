@@ -42,7 +42,6 @@ library
     , basement
     , base-orphans
     , base-prelude
-    , beamable
     , bifunctors
     , blaze-builder
     , blaze-html
@@ -53,8 +52,7 @@ library
     , byteable
     , byteorder
     , bytes
-    , bytestring-builder
-    , c10k
+    , Cabal == 2.5.0.0
     , cabal-doctest
     , cairo
     , call-stack
@@ -84,7 +82,6 @@ library
     , data-default-instances-containers
     , data-default-instances-dlist
     , data-default-instances-old-locale
-    , dense-linear-algebra
     , distributive
     , dlist
     , doctest
@@ -95,7 +92,6 @@ library
     , enummapset-th
     , erf
     , exceptions
-    , extensible
     , extensible-exceptions
     , extra
     , fast-builder
@@ -106,10 +102,8 @@ library
     , foldl
     , foreign-var
     , free
-    , freetype2
     , gauge
     , generic-deriving
-    , ghc-dump-core
     , ghc-paths
     , gio
     , glib
@@ -122,13 +116,11 @@ library
     , half
     , hashable
     , hashtables
-    , haskakafka
     , haskell-lexer
     , hasktags
     , heap
     , heaps
     , hinotify
-    , histogram-fill
     , hmatrix
     , hmatrix-gsl
     , hmatrix-quadprogpp
@@ -136,10 +128,6 @@ library
     , hourglass
     , hpath
     , hpp
-    , hspec
-    , hspec-core
-    , hspec-discover
-    , hspec-expectations
     , hsyslog
     , HTTP
     , http2
@@ -166,14 +154,12 @@ library
     , kickchan
     , lens
     , lens-aeson
-    , libyaml
     , lifted-async
     , lifted-base
     , limp
     , limp-ortools
     , linear
     , ListLike
-    , lzma-maoe
     , maplike
     , math-functions
     , megaparsec
@@ -185,7 +171,6 @@ library
     , microlens-platform
     , microlens-th
     , microstache
-    , mime-mail
     , mime-types
     , mmorph
     , monad-control
@@ -252,7 +237,6 @@ library
     , socks
     , split
     , splitmix
-    , sqroll
     , StateVar
     , statistics
     , stm-delay
@@ -267,14 +251,12 @@ library
     , tf-random
     , th-abstraction
     , th-lift
-    , thyme
     , time-locale-compat
     , tls
     , tls-session-manager
     , total-array
     , transformers-base
     , transformers-compat
-    , true-name
     , unix-bytestring
     , unix-compat
     , unliftio
@@ -293,7 +275,6 @@ library
     , wai
     , warp
     , warp-tls
-    , webserver
     , websockets
     , word8
     , x509

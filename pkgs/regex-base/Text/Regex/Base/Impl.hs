@@ -1,30 +1,31 @@
+{-# LANGUAGE CPP #-}
 -----------------------------------------------------------------------------
 -- |
 -- Module      :  Text.Regex.Impl
 -- Copyright   :  (c) Chris Kuklewicz 2006
 -- License     :  BSD-style (see the file LICENSE)
--- 
+--
 -- Maintainer  :  libraries@haskell.org, textregexlazy@personal.mightyreason.com
 -- Stability   :  experimental
 -- Portability :  non-portable (Text.Regex.Base needs MPTC+FD)
--- 
+--
 -- Helper functions for defining certain instances of
 -- RegexContext. These help when defining instances of RegexContext
 -- with repeated types:
--- 
+--
 -- @
 -- instance (RegexLike regex source) => RegexContext regex source source where
 -- @
--- 
+--
 -- runs into overlapping restrictions. To avoid this I have each backend
 -- define, for its own Regex type:
--- 
+--
 -- @
 -- instance RegexContext Regex String String where
 --   match = polymatch
 --   matchM = polymatchM
 -- @
--- 
+--
 -- @
 -- instance RegexContext Regex ByteString ByteString where
 --   match = polymatch
@@ -35,13 +36,16 @@
 module Text.Regex.Base.Impl(polymatch,polymatchM) where
 
 import Text.Regex.Base
+#if !MIN_VERSION_base(4,13,0)
+import Control.Monad.Fail (MonadFail)
+#endif
 import Data.Array((!))
 
-regexFailed :: (Monad m) => m b
+regexFailed :: (MonadFail m) => m b
 {-# INLINE regexFailed #-}
 regexFailed =  fail $ "regex failed to match"
 
-actOn :: (RegexLike r s,Monad m) => ((s,MatchText s,s)->t) -> r -> s -> m t
+actOn :: (RegexLike r s,MonadFail m) => ((s,MatchText s,s)->t) -> r -> s -> m t
 {-# INLINE actOn #-}
 actOn f r s = case matchOnceText r s of
     Nothing -> regexFailed
@@ -53,6 +57,6 @@ polymatch r s = case matchOnceText r s of
     Nothing -> empty
     Just (_,ma,_) -> fst (ma!0)
 
-polymatchM :: (RegexLike a b,Monad m) => a -> b -> m b
+polymatchM :: (RegexLike a b,MonadFail m) => a -> b -> m b
 {-# INLINE polymatchM #-}
 polymatchM =  actOn (\(_,ma,_)->fst (ma!0))

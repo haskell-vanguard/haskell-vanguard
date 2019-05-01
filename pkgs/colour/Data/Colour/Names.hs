@@ -1,3 +1,4 @@
+{-# LANGUAGE CPP #-}
 {-
 Copyright (c) 2008, 2009
 Russell O'Connor
@@ -28,7 +29,7 @@ THE SOFTWARE.
 -- 'readColourName' takes a string naming a colour (must be all lowercase)
 -- and returns the colour.
 -- Fails if the name is not recognized.
-module Data.Colour.Names 
+module Data.Colour.Names
  (
   readColourName
  ,aliceblue
@@ -182,10 +183,17 @@ module Data.Colour.Names
 where
 
 import Prelude hiding (tan)
+#if MIN_VERSION_base(4,9,0)
+import Control.Monad.Fail (MonadFail)
+#endif
 import Data.Colour.SRGB
 import Data.Colour (black)
 
+#if MIN_VERSION_base(4,9,0)
+readColourName :: (MonadFail m, Ord a, Floating a) => String -> m (Colour a)
+#else
 readColourName :: (Monad m, Ord a, Floating a) => String -> m (Colour a)
+#endif
 readColourName "aliceblue" = return aliceblue
 readColourName "antiquewhite" = return antiquewhite
 readColourName "aqua" = return aqua
@@ -333,7 +341,7 @@ readColourName "white" = return white
 readColourName "whitesmoke" = return whitesmoke
 readColourName "yellow" = return yellow
 readColourName "yellowgreen" = return yellowgreen
-readColourName x = fail $ 
+readColourName x = fail $
   "Data.Colour.Names.readColourName: Unknown colour name "++show x
 
 aliceblue :: (Ord a, Floating a) => Colour a
