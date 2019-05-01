@@ -430,9 +430,6 @@
 [submodule "iteratee-compress"]
     path = pkgs/iteratee-compress
     url = git@github.com:haskell-vanguard/iteratee-compress
-[submodule "iter-stats"]
-    path = pkgs/iter-stats
-    url = git@github.com:haskell-vanguard/iter-stats
 [submodule "js-dgtable"]
     path = pkgs/js-dgtable
     url = git@github.com:haskell-vanguard/js-dgtable

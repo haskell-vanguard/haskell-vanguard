@@ -142,7 +142,6 @@ library
     , iproute
     , iteratee
     , iteratee-compress
-    , iter-stats
     , js-dgtable
     , js-flot
     , js-jquery
