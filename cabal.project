@@ -40,3 +40,6 @@ packages: ./
 
 benchmarks: False
 tests: False
+allow-newer:
+  generic-deriving:template-haskell
+  influxdb:clock
