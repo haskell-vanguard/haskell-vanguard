@@ -1,4 +1,5 @@
 packages: ./
+  /home/fumieval/hs/winery
   pkgs/*/
   pkgs/cabal/cabal-install/
   pkgs/cabal/Cabal/
@@ -40,6 +41,81 @@ packages: ./
 
 benchmarks: False
 tests: False
+
+constraints:
+  any.Cabal ==3.0.0.0
+
 allow-newer:
-  generic-deriving:template-haskell
+  active:base
+  active:semigroups
+  aeson:template-haskell
+  aeson-pretty:base-compat
+  aeson:base-compat
+  aeson:time
+  blaze-markup:base
+  bsb-http-chunked:base
+  cabal-install:base
+  cabal-install:network-uri
+  cabal-install:tar
+  cassava:hashable
+  compact:base
+  cborg:primitive
+  Chart-cairo:lens
+  Chart:lens
+  criterion:base-compat-batteries
+  cryptohash-sha1:base
+  cryptohash-sha256:base
+  diagrams-core:lens
+  diagrams-lib:hashable
+  diagrams-lib:intervals
+  diagrams-lib:lens
+  diagrams-lib:optparse-applicative
+  diagrams-postscript:hashable
+  diagrams-postscript:lens
+  diagrams-svg:hashable
+  diagrams-svg:lens
+  diagrams-svg:optparse-applicative
+  doctest:ghc
+  dual-tree:base
+  dual-tree:semigroups
+  foreign-var:stm
+  foreign-var:transformers
+  flock:base
+  hackage-security:base
+  hackage-security:Cabal
+  hackage-security:network-uri
+  hackage-security:tar
+  hasktags:microlens-platform
+  HTTP:network-uri
+  influxdb:base
   influxdb:clock
+  influxdb:lens
+  influxdb:network
+  integer-logarithms:base
+  kickchan:containers
+  lzma-maoe:StateVar
+  maplike:hashable
+  microstache:base
+  newtype-generics:base
+  MonadRandom:random
+  path:hashable
+  serialise:primitive
+  splitmix:base
+  splitmix:time
+  statestack:base
+  svg-builder:base
+  svg-builder:hashable
+  shared-buffer:base
+  split:base
+  tar:containers
+  text-short:hashable
+  text-short:base
+  total-array:base
+  uniplate:hashable
+  uuid-types:hashable
+  vector:primitive
+  vector-binary-instances:base
+  websockets:network
+  ghc-paths:Cabal
+  entropy:Cabal
+  cairo:Cabal
