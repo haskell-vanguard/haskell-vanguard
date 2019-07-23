@@ -23,6 +23,7 @@ source-repository head
 library
   exposed-modules:
   build-depends: abstract-deque
+    , winery
     , abstract-par
     , adjunctions
     , aeson
@@ -51,7 +52,6 @@ library
     , byteable
     , byteorder
     , bytes
-    , Cabal == 2.5.0.0
     , cabal-doctest
     , call-stack
     , case-insensitive
